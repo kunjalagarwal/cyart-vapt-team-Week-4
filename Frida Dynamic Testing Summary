@@ -1,0 +1,1 @@
+Dynamic analysis concepts were reviewed to understand how runtime application behavior can be inspected. Function monitoring and runtime instrumentation techniques help identify security weaknesses not visible during static analysis. Secure coding practices, strong authentication controls, and protection against runtime tampering improve mobile application security.
