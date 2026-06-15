@@ -1,0 +1,7 @@
+A security assessment was performed on a laboratory system to identify weaknesses that could potentially be exploited by attackers. The review included network reconnaissance, service enumeration, vulnerability assessment, and validation of findings using industry-standard security tools.
+
+The assessment identified several outdated and exposed services including FTP, Telnet, SMB, database services, and web applications. While the environment was intentionally vulnerable for training purposes, the findings demonstrate how similar weaknesses in production environments could increase the risk of unauthorized access, data exposure, and service compromise.
+
+The primary recommendations include updating software, removing insecure services, limiting network exposure, implementing least-privilege access controls, and performing regular vulnerability assessments. Additional security improvements such as centralized monitoring, logging, and configuration hardening are also recommended.
+
+Overall, the assessment successfully demonstrated the security testing process and provided practical recommendations to improve system security and reduce organizational risk.
