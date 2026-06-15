@@ -1,0 +1,84 @@
+## Executive Summary
+
+A Vulnerability Assessment and Penetration Testing (VAPT) engagement was conducted against a controlled laboratory target, Metasploitable2 (192.168.56.101), using the Penetration Testing Execution Standard (PTES) methodology. The objective of the assessment was to identify exposed services, discover security weaknesses, validate findings through manual analysis, and recommend remediation measures to improve the overall security posture of the target system.
+
+The assessment was performed using Kali Linux, Nmap, Burp Suite, and OpenVAS. Reconnaissance activities identified multiple publicly accessible services including FTP, SSH, Telnet, HTTP, SMB, MySQL, PostgreSQL, and Apache Tomcat. Several services were found to be outdated and potentially vulnerable due to insecure configurations and legacy software versions.
+
+Manual validation was conducted using Burp Suite to inspect web traffic and verify service accessibility. OpenVAS was used to perform automated vulnerability scanning and risk assessment. The findings indicated a large attack surface and multiple opportunities for unauthorized access if deployed in a production environment.
+
+The engagement successfully demonstrated the complete VAPT lifecycle including reconnaissance, enumeration, vulnerability assessment, validation, reporting, and remediation planning. Appropriate security recommendations have been provided to reduce risk and improve system hardening.
+
+---
+
+## Attack Timeline
+
+| Timestamp | Target IP      | Vulnerability / Activity              | PTES Phase             |
+| --------- | -------------- | ------------------------------------- | ---------------------- |
+| 10:00     | 192.168.56.101 | Host Discovery                        | Reconnaissance         |
+| 10:10     | 192.168.56.101 | Service Enumeration                   | Intelligence Gathering |
+| 10:15     | 192.168.56.101 | FTP Service Identified (vsftpd 2.3.4) | Vulnerability Analysis |
+| 10:20     | 192.168.56.101 | Telnet Service Exposure               | Vulnerability Analysis |
+| 10:25     | 192.168.56.101 | SMB Service Enumeration               | Vulnerability Analysis |
+| 10:30     | 192.168.56.101 | HTTP Service Analysis                 | Validation             |
+| 10:35     | 192.168.56.101 | Burp Suite Traffic Inspection         | Validation             |
+| 10:40     | 192.168.56.101 | OpenVAS Vulnerability Assessment      | Vulnerability Analysis |
+| 10:50     | 192.168.56.101 | Findings Review and Documentation     | Reporting              |
+
+---
+
+## Key Findings
+
+### FTP Service Exposure
+
+* Service: vsftpd 2.3.4
+* Port: 21
+* Anonymous FTP access enabled.
+* Potential unauthorized access risk.
+
+### Telnet Service Exposure
+
+* Service: Linux Telnet
+* Port: 23
+* Credentials transmitted in plaintext.
+* Susceptible to interception attacks.
+
+### SMB Service Exposure
+
+* Service: Samba
+* Ports: 139, 445
+* Outdated implementation detected.
+* Potential attack surface expansion.
+
+### Web Server Exposure
+
+* Service: Apache HTTP Server 2.2.8
+* Port: 80
+* Legacy version identified.
+* Requires upgrade and hardening.
+
+### Database Services
+
+* MySQL and PostgreSQL services exposed.
+* Access restrictions should be implemented.
+* Regular patching recommended.
+
+---
+
+## Remediation Plan
+
+1. Disable anonymous FTP access and upgrade FTP services.
+2. Remove Telnet and enforce SSH-only administration.
+3. Upgrade Samba to a supported version.
+4. Upgrade Apache web server and remove unnecessary modules.
+5. Restrict database access using firewall rules.
+6. Apply operating system and application security patches.
+7. Implement the principle of least privilege.
+8. Conduct periodic vulnerability assessments using OpenVAS.
+9. Enable centralized logging and monitoring.
+10. Perform security reviews after remediation activities.
+
+---
+
+## Conclusion
+
+The VAPT engagement successfully identified multiple exposed services, outdated software components, and security weaknesses within the target environment. The findings demonstrate the importance of continuous vulnerability management, secure configuration practices, and regular security assessments. By implementing the recommended remediation measures, the overall attack surface can be significantly reduced and the security posture of the environment can be improved.
