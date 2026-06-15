@@ -1,0 +1,74 @@
+LAB 2–5 COMBINED REPORT CONTENT
+
+LAB 2 – API SECURITY TESTING
+
+Test Log
+
+008 | Authorization Testing | Critical | /api/users
+009 | Input Validation Testing | High | /graphql
+
+Checklist:
+Enumerated API endpoints
+Reviewed authorization controls
+Tested request manipulation
+Captured requests using Burp Suite
+Generated requests using Postman
+
+50-Word Summary
+
+API testing was performed using Burp Suite and Postman. Request interception, parameter inspection, and authorization validation were conducted. Multiple endpoints were reviewed to identify insecure configurations and input validation weaknesses. Testing demonstrated the importance of secure authorization, proper validation, and continuous API security assessment.
+
+---
+
+LAB 3 – PRIVILEGE ESCALATION
+
+Task Log
+
+010 | Linux Enumeration | 192.168.56.101 | Success | Enumeration Completed
+
+Checklist:
+LinPEAS Downloaded
+Enumeration Performed
+SUID Analysis Conducted
+Cron Jobs Reviewed
+Persistence Techniques Studied
+
+Persistence Summary (50 Words)
+
+Persistence techniques were reviewed using cron jobs and service-based startup mechanisms. Attackers may leverage scheduled tasks to regain access after system reboot. Proper monitoring, least privilege implementation, configuration auditing, and service hardening significantly reduce persistence opportunities and improve overall system security.
+
+---
+
+LAB 4 – NETWORK PROTOCOL ATTACKS
+
+Attack Log
+
+015 | SMB Relay Simulation | Lab Network | Simulated | Traffic Analysis
+
+Checklist:
+Packet Capture Performed
+ARP Spoofing Concepts Reviewed
+SMB Authentication Studied
+Wireshark Analysis Completed
+
+MitM Summary (50 Words)
+
+Network traffic analysis demonstrated how protocol weaknesses may expose sensitive information. ARP spoofing and relay attack concepts were reviewed in a controlled environment. Proper network segmentation, encrypted communication, secure authentication mechanisms, and continuous monitoring help mitigate man-in-the-middle attack risks.
+
+---
+
+LAB 5 – MOBILE APPLICATION TESTING
+
+Test Log
+
+016 | Insecure Storage | High | Android APK
+
+Checklist:
+MobSF Installed
+APK Uploaded
+Static Analysis Completed
+Findings Reviewed
+
+Dynamic Analysis Summary (50 Words)
+
+Mobile application assessment focused on static analysis and application behavior review. MobSF identified security-relevant configurations, permissions, and storage practices. Dynamic testing concepts such as runtime instrumentation and function monitoring were studied. Secure coding practices, encrypted storage, and proper authentication controls improve mobile application security.
