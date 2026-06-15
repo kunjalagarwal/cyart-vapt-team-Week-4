@@ -1,0 +1,1 @@
+API security testing was conducted using Burp Suite and Postman to evaluate endpoint security, request handling, and authorization controls. API requests were intercepted, modified, and analyzed to identify potential weaknesses. The assessment demonstrated the importance of proper authentication, input validation, and access control mechanisms in modern web applications.
