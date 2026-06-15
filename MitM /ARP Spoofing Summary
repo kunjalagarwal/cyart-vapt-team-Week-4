@@ -1,0 +1,1 @@
+Network protocol analysis demonstrated how insecure communication channels can be abused to intercept traffic. ARP spoofing concepts were reviewed to understand man-in-the-middle attacks and traffic manipulation. Implementing encrypted communication, network segmentation, secure authentication, and monitoring mechanisms significantly reduces the risk of interception attacks.
