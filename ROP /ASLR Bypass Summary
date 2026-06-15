@@ -1,0 +1,1 @@
+Return-Oriented Programming (ROP) is a technique that reuses existing executable code fragments to perform malicious actions while bypassing memory protection mechanisms such as ASLR and DEP. Modern defenses include Address Space Layout Randomization, Control Flow Integrity, stack protection mechanisms, software hardening, and regular security patch management.
