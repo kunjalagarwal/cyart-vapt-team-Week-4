@@ -1,0 +1,1 @@
+Persistence mechanisms were studied using scheduled tasks and service-based startup methods. Attackers may attempt to maintain access by creating automated execution points that survive reboots. Security monitoring, configuration auditing, access control enforcement, and regular reviews of startup services help reduce persistence-related risks.
